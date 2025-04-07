@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 Practice with Tailwind CSS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-8">
+
+    <section class="mb-8">
+        <h2 class="text-2xl font-semibold mb-4">Roman Numeral List</h2>
+        <ol type="I" class="list-decimal list-inside">
+            <li>Item One</li>
+            <li>Item Two</li>
+            <li>Item Three</li>
+            <li>Item Four</li>
+            <li>Item Five</li>
+        </ol>
+    </section>
+
+    <section class="mb-8">
+        <h2 class="text-2xl font-semibold mb-4">Pexels Image</h2>
+        <img src="https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Delicious burger" class="max-w-full rounded-lg shadow-md">
+    </section>
+
+    <section class="mb-8">
+        <h2 class="text-2xl font-semibold mb-4">Contact List</h2>
+        <table class="min-w-full bg-white rounded-lg shadow-md">
+            <thead>
+                <tr class="bg-gray-200">
+                    <th class="py-2 px-4 border-b text-left">Name</th>
+                    <th class="py-2 px-4 border-b text-left">Address</th>
+                    <th class="py-2 px-4 border-b text-left">Mobile</th>
+                    <th class="py-2 px-4 border-b text-left">Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="py-2 px-4 border-b">John Doe</td>
+                    <td class="py-2 px-4 border-b">123 Main St</td>
+                    <td class="py-2 px-4 border-b">+1 555-1234</td>
+                    <td class="py-2 px-4 border-b">john.doe@example.com</td>
+                </tr>
+                <tr>
+                    <td class="py-2 px-4 border-b">Jane Smith</td>
+                    <td class="py-2 px-4 border-b">456 Oak Ave</td>
+                    <td class="py-2 px-4 border-b">+1 555-5678</td>
+                    <td class="py-2 px-4 border-b">jane.smith@example.com</td>
+                </tr>
+                <tr>
+                    <td class="py-2 px-4 border-b">David Lee</td>
+                    <td class="py-2 px-4 border-b">789 Pine Ln</td>
+                    <td class="py-2 px-4 border-b">+1 555-9012</td>
+                    <td class="py-2 px-4 border-b">david.lee@example.com</td>
+                </tr>
+                <tr>
+                    <td class="py-2 px-4 border-b">Emily White</td>
+                    <td class="py-2 px-4 border-b">101 Elm Rd</td>
+                    <td class="py-2 px-4 border-b">+1 555-3456</td>
+                    <td class="py-2 px-4 border-b">emily.white@example.com</td>
+                </tr>
+                <tr>
+                    <td class="py-2 px-4 border-b">Michael Brown</td>
+                    <td class="py-2 px-4 border-b">202 Maple Dr</td>
+                    <td class="py-2 px-4 border-b">+1 555-7890</td>
+                    <td class="py-2 px-4 border-b">michael.brown@example.com</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section class="bg-white p-6 rounded-lg shadow-md">
+        <h2 class="text-2xl font-semibold mb-4">Registration Form</h2>
+        <form action="/register" method="post" class="space-y-4">
+            <fieldset class="border p-4 rounded-md">
+                <legend class="text-lg font-medium">Personal Information</legend>
+
+                <div>
+                    <label for="name" class="block text-sm font-medium text-gray-700">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required class="mt-1 p-2 border rounded-md w-full">
+                </div>
+
+                <div>
+                    <label for="email" class="block text-sm font-medium text-gray-700">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required class="mt-1 p-2 border rounded-md w-full">
+                </div>
+
+                <div>
+                    <label for="password" class="block text-sm font-medium text-gray-700">Password:</label>
+                    <input type="password" id="password" name="password" placeholder="Enter your password" required class="mt-1 p-2 border rounded-md w-full">
+                </div>
+
+                <div>
+                    <label for="dob" class="block text-sm font-medium text-gray-700">Date of Birth:</label>
+                    <input type="date" id="dob" name="dob" required class="mt-1 p-2 border rounded-md w-full">
+                </div>
+
+                <div>
+                    <label for="country" class="block text-sm font-medium text-gray-700">Country:</label>
+                    <select id="country" name="country" class="mt-1 p-2 border rounded-md w-full">
+                        <option value="usa">USA</option>
+                        <option value="canada">Canada</option>
+                        <option value="uk">UK</option>
+                        <option value="australia">Australia</option>
+                    </select>
+                </div>
+
+                <div class="space-y-2">
+                    <p class="text-sm font-medium text-gray-700">Gender:</p>
+                    <div class="flex items-center">
+                        <input type="radio" id="male" name="gender" value="male" class="mr-2">
+                        <label for="male" class="text-sm">Male</label>
+                    </div>
+                    <div class="flex items-center">
+                        <input type="radio" id="female" name="gender" value="female" class="mr-2">
+                        <label for="female" class="text-sm">Female</label>
+                    </div>
+                    <div class="flex items-center">
+                        <input type="radio" id="other" name="gender" value="other" class="mr-2">
+                        <label for="other" class="text-sm">Other</label>
+                    </div>
+                </div>
+
+                <div class="space-y-2">
+                    <p class="text-sm font-medium text-gray-700">Interests:</p>
+                    <div class="flex items-center">
+                        <input type="checkbox" id="sports" name="interests" value="sports" class="mr-2">
+                        <label for="sports" class="text-sm">Sports</label>
+                    </div>
+                    <div class="flex items-center">
+                        <input type="checkbox" id="music" name="interests" value="music" class="mr-2">
+                        <label for="music" class="text-sm">Music</label>
+                    </div>
+                    <div class="flex items-center">
+                        <input type="checkbox" id="reading" name="interests" value="reading" class="mr-2">
+                        <label for="reading" class="text-sm">Reading</label>
+                    </div>
+                </div>
+
+                <input type="submit" value="Register" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+            </fieldset>
+        </form>
+    </section>
+
+</body>
+</html>
